@@ -1,10 +1,11 @@
 /* 
- * File:   main.cpp
  * Author: Juan Enriquez
- * Project: Property Tax
- * 
- * Created on September 6, 2020, 8:37 PM
+ * 7th Edition
+ * Chapter : 3
+ * Problem: 3.13 Property Tax
+ * Created on August 28, 2020, 12:29 PM
  */
+
 
 #include <iostream>
 #include <iomanip>

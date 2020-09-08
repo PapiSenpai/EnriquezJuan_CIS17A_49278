@@ -1,9 +1,11 @@
 /* 
- * File:   main.cpp
  * Author: Juan Enriquez
- * Project: Software Sales
- * Created on September 6, 2020, 10:00 PM
+ * 7th Edition
+ * Chapter :4
+ * Problem: 4.10 Software Sales
+ * Created on August 28, 2020, 12:29 PM
  */
+
 
 #include <iostream>
 #include <iomanip>

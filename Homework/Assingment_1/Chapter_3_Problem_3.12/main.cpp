@@ -1,7 +1,8 @@
 /* 
- * File:   main.cpp
  * Author: Juan Enriquez
- * Project: Monthly Sales Tax
+ * 7th Edition
+ * Chapter :
+ * Problem: 3.12 Monthly Sales Tax
  * Created on August 28, 2020, 12:29 PM
  */
 

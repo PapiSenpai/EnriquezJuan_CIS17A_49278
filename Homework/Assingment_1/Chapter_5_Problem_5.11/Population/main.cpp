@@ -1,12 +1,14 @@
 /* 
- * File:   main.cpp
  * Author: Juan Enriquez
- * Project: Population
- * Created on September 6, 2020, 11:36 PM
+ * 7th Edition
+ * Chapter :5
+ * Problem: 5.11 Population
+ * Created on August 28, 2020, 12:29 PM
  */
 
 #include <iostream>
 #include <iomanip>
+#include <cmath>
 
 using namespace std;
 
@@ -17,10 +19,11 @@ using namespace std;
  *************************************/
 int main(int argc, char** argv) {
 
+    // Datatypes and Valuse
     int organism;
     float daily_increase;
     int days;
-    
+    // Output
     cout << "What will be the number if starting organisms?" << endl;
     cin >> organism;
     cout << "How much will the population increase?" << endl;
@@ -28,20 +31,22 @@ int main(int argc, char** argv) {
     cout << "How many days will the simulation last?" << endl;
     cin >> days;
     
-    cout << "Population First Day: " << organism << endl;
+    cout << "Original Population : " << organism << endl;
     cout << "Expected growth : " << daily_increase << "%" << endl << endl;
-    // FIX EQUATION
+
+    // If statement to catch any invalid answers
     if (organism > 2 && daily_increase > 0 && days > 1)
     {
+        //for loop to log the days
         for (int counter = 1; counter <= days ; counter++ )
-        {
-            int new_population = ((organism / daily_increase) * counter);
-            float Total = new_population + organism;
+        {                           
+            float percentage = daily_increase / 100; // what the equation will use as the percent increase
+            organism += (organism * percentage); // outputs the new population
             
             cout << "Day :" << counter << endl;
-            cout << "New Population: " << Total << endl;
-         
-            counter;
+            cout << "New Population: " << organism << endl;
+            
+            counter; 
         }
     }
     else
